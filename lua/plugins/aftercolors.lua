@@ -1,0 +1,3 @@
+return {
+    "tsiemens/vim-aftercolors",
+}
