@@ -34,7 +34,7 @@ vim.opt.listchars = {
 vim.opt.list = false -- Disable list mode by default
 
 -- Disable the mouse, it interferes with my normal usage
-vim.opt.mouse = ""
+-- vim.opt.mouse = ""
 
 -- Disable quote concealing in json
 vim.g.vim_json_syntax_conceal = 0
