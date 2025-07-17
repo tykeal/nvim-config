@@ -53,3 +53,16 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt.syntax = "on"
   end,
 })
+
+-- Deal with fold saving / folding
+vim.api.nvim_create_autocmd({ "BufWinLeave" }, {
+  pattern = { "*.*" },
+  desc = "Save view (folds) when closing file",
+  command = "mkview",
+})
+
+vim.api.nvim_create_autocmd({ "BufWinEnter" }, {
+  pattern = { "*.*" },
+  desc = "Load view (folds) when opening file",
+  command = "silent! loadview",
+})
