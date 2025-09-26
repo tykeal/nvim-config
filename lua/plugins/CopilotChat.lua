@@ -11,7 +11,7 @@ return {
       auto_insert_mode = true,
       model = "gpt-5",
       tools = { "copilot", "neovim" },
-      sticky = "#buffers",
+      sticky = { "#buffers", "#files" },
     },
     -- See Commands section for default commands if you want to lazy load on them
   },
