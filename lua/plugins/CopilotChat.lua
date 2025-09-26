@@ -8,6 +8,10 @@ return {
     -- build = "make tiktoken", -- Only on MacOS or Linux
     opts = {
       -- See Configuration section for options
+      auto_insert_mode = true,
+      model = "gpt-5",
+      tools = { "copilot", "neovim" },
+      sticky = "#buffers",
     },
     -- See Commands section for default commands if you want to lazy load on them
   },
