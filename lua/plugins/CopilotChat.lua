@@ -9,7 +9,7 @@ return {
     opts = {
       -- See Configuration section for options
       auto_insert_mode = true,
-      model = "gpt-5",
+      model = "claude-opus-4.5",
       tools = { "copilot", "neovim" },
       sticky = { "#buffers", "#files" },
     },
